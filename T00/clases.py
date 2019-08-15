@@ -1,5 +1,5 @@
 import texto
-
+import string
 
 class MenuDeInicio:
 
