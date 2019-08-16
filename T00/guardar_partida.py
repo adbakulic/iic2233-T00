@@ -25,12 +25,12 @@ class Juego:
         archivo.write(str(self.N) + "\n")
         archivo.write(str(self.M) + "\n")
 
-        for i in range(len(self.tablero_a)):
-            linea_sin_legos = " ".join(str(self.tablero_a[i])) + "\n"
+        for i in self.tablero_a:
+            linea_sin_legos = ",".join(i) + "\n"
             archivo.write(linea_sin_legos)
 
-        for i in range(len(self.tablero_o)):
-            linea_con_numeros_y_legos = " ".join(str(self.tablero_o[i])) + "\n"
+        for i in self.tablero_o:
+            linea_con_numeros_y_legos = ",".join(i) + "\n"
             archivo.write(linea_con_numeros_y_legos)
 
         archivo.close()
@@ -42,38 +42,44 @@ class Juego:
         mayusculas = {l: n for l, n in zip(letras_mayusculas, range(0, 16))}
         letras_posibles.update(mayusculas)
         letra_convertida = letras_posibles[self.letra]
+        celdas_descubiertas = 0
 
         if self.tablero_a[self.numero][letra_convertida] == "L":
             print("Haz perdido")
             tablero.print_tablero(self.tablero_o, True)
             exit()
+
         else:
             self.tablero_a[self.numero][letra_convertida] = self.tablero_o[self.numero][letra_convertida]
             tablero.print_tablero(self.tablero_a, True)
+            celdas_descubiertas += 1
+
+        return celdas_descubiertas
 
 
     def cargar(self):
         nombre_archivo = os.path.join("partidas", self.nombre + ".txt")
-
-        #archivo = open(nombre_archivo, "r")
-        #self.N = archivo.readline()
-        #tablero_a = []
-        #tablero_o = []
-        #for linea in archivo:
-            #linea = linea.strip()
-        #archivo.close()
-
-        #return tablero_a, tablero_o
-
 
         with open(nombre_archivo, "r") as archivo:
 
             lista_lineas = []
             for linea in archivo:
                 linea = linea.strip()
-                linea = linea.split("\n")
+                linea = linea.split(",")
                 lista_lineas.append(linea)
-            print(lista_lineas)
 
-            self.N = lista_lineas.pop(0)
+            self.N = lista_lineas.pop(0)[0]
+            self.M = lista_lineas.pop(0)[0]
+
+            lista_a = lista_lineas[: int(self.N)]
+            lista_o = lista_lineas[int(self.N) : int(self.N) * 2]
+
+
+
+            return self.N, self.M, lista_a, lista_o
+
+
+
+
+
 

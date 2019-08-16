@@ -72,7 +72,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
@@ -89,7 +89,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
@@ -106,7 +106,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
@@ -123,7 +123,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
@@ -144,7 +144,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
@@ -165,7 +165,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
@@ -186,7 +186,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
@@ -207,7 +207,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
@@ -234,7 +234,7 @@ def crear_tablero(N,M):
                     else:
                         legos_alrededor = legos_alrededor
 
-                    lista_con_numeros_y_legos.append(legos_alrededor)
+                    lista_con_numeros_y_legos.append(str(legos_alrededor))
                 else:
                     lista_con_numeros_y_legos.append("L")
 
