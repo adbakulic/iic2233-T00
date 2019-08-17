@@ -73,7 +73,6 @@ def menu_de_juego(N,M):
 
     if decision_usuario_juego == "3":
         print("Ha salido de la partida con guardar")
-        exit()
         return decision_usuario_juego, 0, 0, 0
 
 
@@ -81,5 +80,4 @@ def menu_de_juego(N,M):
 
     if decision_usuario_juego == "4":
         print("Ha salido de la partida sin guardar")
-        exit()
         return decision_usuario_juego, 0, 0, 0

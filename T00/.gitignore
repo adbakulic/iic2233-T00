@@ -1,0 +1,9 @@
+\__pycache__
+*.idea
+*.DS_STORE
+turno.py
+clases.py
+\partidas
+parametros.py
+tablero.py
+puntajes.txt

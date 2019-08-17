@@ -13,7 +13,7 @@ def decision_usuario_inicio():
         if not decision_usuario_inicio.isdigit():
             print("Debe ingresar uno de los dígitos entregado en las opciones")
         else:
-            if not int(decision_usuario_inicio) in range(4):
+            if not int(decision_usuario_inicio) in range(5):
                 print("Debe ingresar un dígito entre el 0 y el 3, ambos inclusive")
             else:
                 break
