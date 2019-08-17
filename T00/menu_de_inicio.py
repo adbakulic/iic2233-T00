@@ -13,7 +13,7 @@ def decision_usuario_inicio():
         if not decision_usuario_inicio.isdigit():
             print("Debe ingresar uno de los dígitos entregado en las opciones")
         else:
-            if not int(decision_usuario_inicio) in range(5):
+            if not int(decision_usuario_inicio) in range(4):
                 print("Debe ingresar un dígito entre el 0 y el 3, ambos inclusive")
             else:
                 break
@@ -70,6 +70,10 @@ def decision_usuario_inicio():
     elif decision_usuario_inicio == "3":
         print("Estos son sus 10 puntajes más altos:")
         return nombre, decision_usuario_inicio, 0, 0
+
+    elif decision_usuario_inicio == "4":
+        return nombre, decision_usuario_inicio, 0, 0
+        pass
 
 
 

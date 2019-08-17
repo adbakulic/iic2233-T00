@@ -49,6 +49,8 @@ class Juego:
             print("Haz perdido")
             tablero.print_tablero(self.tablero_o, True)
 
+            os.remove(os.path.join("partidas", self.nombre + ".txt"))
+
             return False
 
         else:

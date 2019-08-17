@@ -1,8 +1,6 @@
 import menu_de_inicio
 import crear_tablero
 import menu_de_juego
-import turno
-import os
 import tablero
 from  guardar_partida import Juego
 
@@ -152,6 +150,3 @@ elif decision_usuario_inicio == "3":
     print(juego.ver_ranking())
     exit()
 
-# [4] Volver atrás.
-else:
-    pass
